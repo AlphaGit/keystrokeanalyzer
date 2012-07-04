@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.KeystrokeAnalyzer.Win
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.KeystrokeAnalyzer.Domain", "Alpha.KeystrokeAnalyzer.Domain\Alpha.KeystrokeAnalyzer.Domain.csproj", "{B4A738DA-A123-4D64-875F-4946C8F190E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.KeystrokeAnalyzer.SendSummaryToDB", "Alpha.KeystrokeAnalyzer.SendSummaryToDB\Alpha.KeystrokeAnalyzer.SendSummaryToDB.csproj", "{8E587EA9-7A30-4BD5-A78C-C86A8E51D480}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{51D2CCB5-993C-444D-B341-93928D0CB81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51D2CCB5-993C-444D-B341-93928D0CB81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51D2CCB5-993C-444D-B341-93928D0CB81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E587EA9-7A30-4BD5-A78C-C86A8E51D480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E587EA9-7A30-4BD5-A78C-C86A8E51D480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E587EA9-7A30-4BD5-A78C-C86A8E51D480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E587EA9-7A30-4BD5-A78C-C86A8E51D480}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4A738DA-A123-4D64-875F-4946C8F190E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B4A738DA-A123-4D64-875F-4946C8F190E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4A738DA-A123-4D64-875F-4946C8F190E5}.Release|Any CPU.ActiveCfg = Release|Any CPU

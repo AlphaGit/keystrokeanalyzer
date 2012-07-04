@@ -52,7 +52,7 @@ namespace Alpha.KeystrokeAnalyzer.WinService
 
         private void BootstrapProcessingTimer()
         {
-            _processingTimer = new Timer(1000 * 10);
+            _processingTimer = new Timer(1000 * ServiceConfiguration.FlushIntervalSeconds);
             _processingTimer.Elapsed += ProcessingTimer_Elapsed;
             _processingTimer.Start();
         }

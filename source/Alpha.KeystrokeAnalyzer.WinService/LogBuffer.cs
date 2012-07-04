@@ -35,18 +35,17 @@ namespace Alpha.KeystrokeAnalyzer.WinService
 
         public void FlushToFile(string path)
         {
-            var writer = File.CreateText(path);
-            writer.Write(
-                string.Join("\t", _logItems
+            var summary = 
+                "{timestamp:\"" + DateTime.Now.ToString("s") + "\","
+                + "data:[" +
+                string.Join(",", _logItems
                     .Where(x => x is Keystroke)
                     .Cast<Keystroke>()
                     .GroupBy(x => x.ScanCode)
-                    .Select(x => string.Format("{0}:{1}", x.Key, x.Count()))
-                )
-            );
-            writer.Flush();
-            writer.Close();
-            writer.Dispose();
+                    .OrderBy(x => x.Key)
+                    .Select(x => string.Format("{{{0}:{1}}}", x.Key, x.Count()))
+                ) + "]}";
+            File.AppendAllText(path, Environment.NewLine + summary);
 
             _logItems.Clear();
         }
