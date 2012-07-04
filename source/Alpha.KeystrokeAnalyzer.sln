@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.KeystrokeAnalyzer", "Alpha.KeystrokeAnalyzer\Alpha.KeystrokeAnalyzer.csproj", "{6FFF1214-3149-4445-AA15-81675D9BF854}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{7CF426A0-DD69-414F-A60F-9B05A0379AF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HookLib", "Libs\HookLib\HookLib\HookLib.csproj", "{3858AA1D-13E6-4BF6-A177-D76B47092A9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.KeystrokeAnalyzer.WinService", "Alpha.KeystrokeAnalyzer.WinService\Alpha.KeystrokeAnalyzer.WinService.csproj", "{51D2CCB5-993C-444D-B341-93928D0CB81A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.KeystrokeAnalyzer.Domain", "Alpha.KeystrokeAnalyzer.Domain\Alpha.KeystrokeAnalyzer.Domain.csproj", "{B4A738DA-A123-4D64-875F-4946C8F190E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,14 @@ Global
 		{3858AA1D-13E6-4BF6-A177-D76B47092A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3858AA1D-13E6-4BF6-A177-D76B47092A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3858AA1D-13E6-4BF6-A177-D76B47092A9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6FFF1214-3149-4445-AA15-81675D9BF854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FFF1214-3149-4445-AA15-81675D9BF854}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FFF1214-3149-4445-AA15-81675D9BF854}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FFF1214-3149-4445-AA15-81675D9BF854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51D2CCB5-993C-444D-B341-93928D0CB81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D2CCB5-993C-444D-B341-93928D0CB81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D2CCB5-993C-444D-B341-93928D0CB81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D2CCB5-993C-444D-B341-93928D0CB81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A738DA-A123-4D64-875F-4946C8F190E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A738DA-A123-4D64-875F-4946C8F190E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A738DA-A123-4D64-875F-4946C8F190E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A738DA-A123-4D64-875F-4946C8F190E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

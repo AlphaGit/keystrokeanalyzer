@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6FFF1214-3149-4445-AA15-81675D9BF854}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{51D2CCB5-993C-444D-B341-93928D0CB81A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Alpha.KeystrokeAnalyzer</RootNamespace>
-    <AssemblyName>Alpha.KeystrokeAnalyzer</AssemblyName>
+    <RootNamespace>Alpha.KeystrokeAnalyzer.WinService</RootNamespace>
+    <AssemblyName>Alpha.KeystrokeAnalyzer.WinService</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -39,10 +39,18 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KeystrokeAnalyzerService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KeystrokeAnalyzerService.Designer.cs">
+      <DependentUpon>KeystrokeAnalyzerService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogBuffer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -50,6 +58,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Alpha.KeystrokeAnalyzer.Domain\Alpha.KeystrokeAnalyzer.Domain.csproj">
+      <Project>{b4a738da-a123-4d64-875f-4946c8f190e5}</Project>
+      <Name>Alpha.KeystrokeAnalyzer.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Libs\HookLib\HookLib\HookLib.csproj">
       <Project>{3858aa1d-13e6-4bf6-a177-d76b47092a9c}</Project>
       <Name>HookLib</Name>
