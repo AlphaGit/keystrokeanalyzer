@@ -1,0 +1,3 @@
+[submodule "source/Libs/HookLib"]
+	path = source/Libs/HookLib
+	url = git@github.com:AlphaGit/HookLib.git
